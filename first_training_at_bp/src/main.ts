@@ -9,11 +9,11 @@ async function bootstrap() {
 
   logger.verbose(` APP ENV = ${appEnv}`)
 
-  Logger.overrideLogger(
-    appEnv == "development" ?
-      ['error', 'warn', 'debug', 'fatal', 'verbose', 'log'] :
-      ['error', 'warn']
-  );
+  /*  Logger.overrideLogger(
+     appEnv == "development" ?
+       ['error', 'warn', 'debug', 'fatal', 'verbose', 'log'] :
+       ['error', 'warn']
+   ); */
 
 
   await app.listen(9000);
