@@ -1,5 +1,5 @@
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Post, Res } from '@nestjs/common';
-import { GenericApiResponseDto } from 'src/dto/generic_api_response.dto';
+import { GenericApiResponseDto } from '../dto/generic_api_response.dto';
 import { StudentService } from './student.service';
 import { Response } from 'express';
 
